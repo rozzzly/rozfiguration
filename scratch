@@ -1,0 +1,58 @@
+L list from Monday, Jun. 8 2015 3:05 AM
+
+To copy this list, type [Ctrl] A, then type [Ctrl] C. 
+
+Facebook
+https://www.facebook.com/
+
+How can I safely undo changes that I may or may not have made? - Vi and Vim Stack Exchange
+http://vi.stackexchange.com/questions/129/how-can-i-safely-undo-changes-that-i-may-or-may-not-have-made
+
+fasd/fasd at master · clvv/fasd
+https://github.com/clvv/fasd/blob/master/fasd
+
+unix - Choosing between .bashrc, .profile, .bash_profile, etc - Super User
+https://superuser.com/questions/789448/choosing-between-bashrc-profile-bash-profile-etc
+
+chgrp - Wikipedia, the free encyclopedia
+http://en.wikipedia.org/wiki/Chgrp
+
+scrooloose/nerdtree
+https://github.com/scrooloose/nerdtree
+
+man - Quick search of command options in bash - Stack Overflow
+http://stackoverflow.com/questions/17509757/quick-search-of-command-options-in-bash
+
+chmod - Wikipedia, the free encyclopedia
+http://en.wikipedia.org/wiki/Chmod
+
+linux - How to check a file exists - Server Fault
+http://serverfault.com/questions/50347/how-to-check-a-file-exists
+
+Adding a remote - User Documentation
+https://help.github.com/articles/adding-a-remote/
+
+rozzzly/rozfiguration
+https://github.com/rozzzly/rozfiguration
+
+git follow symlinks - Google Search
+https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=git%20follow%20symlinks
+
+
+set default editor for mc
+sudo update-alternatives --config editor 
+didnt work. try export $EDITOR=vim
+actuallly, 
+	sudo update-alternatives --install /usr/bin/editor editor /usr/bin/vim 100
+	http://vim.wikia.com/wiki/Set_Vim_as_your_default_editor_for_Unix
+
+	still set the export $EDITOR (and $VISUAL)  in .profile tho
+
+set default eidtor for mc
+http://askubuntu.com/questions/16776/how-to-switch-the-editor-in-mc-midnight-commander-from-nano-to-mcedit
+
+
+mc theme
+[Colors]
+http://ajurzyk.blogspot.com/2010/06/midnight-commander-theme.html
+base_color=normal=lightgray,black:input=white,brightred:errors=white,brightred:gauge=yellow,red:selected=gray,lightgray:marked=yellow,black:markselect=yellow,brown:directory=white,black:executable=brightgreen,black:link=green,black:device=brightmagenta,black:special=brown,black:core=brightred,yellow:menu=gray,lightgray:menuhot=yellow,lightgray:menuhotsel=brightred,black:dnormal=white,gray:dfocus=white,brightgreen:dhotnormal=brightred,gray:dhotfocus=brightred,gray:editmarked=white,brightred:editnormal=white,black:editbold=blue,brown:reverse=yellow,black:helpnormal=white,black:helpitalic=brightmagenta,black:helpbold=brightcyan,black:helpslink=yellow,black:helplink=brightblue,black:viewunderline=brightgreen,white
