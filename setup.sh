@@ -18,9 +18,26 @@ if ! id -nG $(whoami) | grep -qE "\bdevelopers\b"; then
 	return
 fi
 
-echo 'alwayshigh'
-
-exit 0
+#==================================================================================================
+# demand that user can sudo into root, otherwise exit 
+#	@see http://goo.gl/qfMfwM
+#
+# ALSO
+#..................................................................................................
+# colored error a la @see http://wiki.bash-hackers.org/scripting/terminalcodes
+#--------------------------------------------------------------------------------------------------
+CAN_SUDO=$(sudo -n uptime 2>&1|grep "load"|wc -l)
+if [ ${CAN_SUDO} -le 0 ]; then
+	#save default so it can be restored
+	tput smcup
+	#white text
+	tput setaf 7
+	#red background
+	tput settab 1
+        echo "USER CANNOT SUDO. Setup script will not run. If already isntalled, most preexisting functions will be applied. "
+	tput rmcup
+	return 
+fi
 
  
 #==================================================================================================
@@ -69,7 +86,7 @@ alias z_rawdawg='fasd_cd -d'      # cd, same functionality as j in autojump + di
 alias zi='fasd_cd -d -i'  # cd with interactive selection
 alias zadd='fasd -A'	  # add path(s)
 alias zrem='fasd -D'	  # delete (paths)s
-alias zdel=zrem
+alias zdel=zrem           # alias to the zrem alias
 
 alias za='fasd -a'        # any
 alias zs='fasd -s'        # show / search / select
@@ -87,12 +104,11 @@ alias zifs='fasd -sif'    # interactive file selection
 #
 # create alias to internal function in a way such that `z` will run `fasd_cd -d -i` and then `lsd`
 #-------------------------------------------------------------------------------------------------- 
-function fyuck () 
+function lcd () 
 {
 	eval "fasd_cd -d $0";
 	lsd;
 }
-
 #
 # enable autocomplete on aliases
 #..................................................................................................

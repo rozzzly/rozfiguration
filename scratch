@@ -5,6 +5,14 @@ To copy this list, type [Ctrl] A, then type [Ctrl] C.
 Facebook
 https://www.facebook.com/
 
+check if user can sudo
+	CAN_I_RUN_SUDO=$(sudo -n uptime 2>&1|grep "load"|wc -l)
+	if [ ${CAN_I_RUN_SUDO} -gt 0 ] then
+  		echo "I can run the sudo command"
+    	else
+        	echo "I can't run the Sudo command"
+	fi
+
 How can I safely undo changes that I may or may not have made? - Vi and Vim Stack Exchange
 http://vi.stackexchange.com/questions/129/how-can-i-safely-undo-changes-that-i-may-or-may-not-have-made
 
