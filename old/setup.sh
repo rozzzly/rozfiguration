@@ -11,12 +11,18 @@
 #
 ###################################################################################################
 
+
 #==================================================================================================
 # demand that user is a member of the `developers` group, exit if not
 #--------------------------------------------------------------------------------------------------
-if ! id -nG $(whoami) | grep -qE "\bdevelopers\b"; then
+if ! id -nG ${whoami} | grep -qE "\bdevelopers\b"; then
+#	echo "user "
 	return
+#else 
+#	echo "dev"
 fi
+
+
 
 #==================================================================================================
 # demand that user can sudo into root, otherwise exit 
@@ -27,14 +33,15 @@ fi
 # colored error a la @see http://wiki.bash-hackers.org/scripting/terminalcodes
 #--------------------------------------------------------------------------------------------------
 CAN_SUDO=$(sudo -n uptime 2>&1|grep "load"|wc -l)
-if [ ${CAN_SUDO} -le 0 ]; then
+if [ ${CAN_SUDO} -ge 0 ]; then
 	#save default so it can be restored
 	tput smcup
 	#white text
-	tput setaf 7
+	tput sietaf 7
 	#red background
 	tput settab 1
-        echo "USER CANNOT SUDO. Setup script will not run. If already isntalled, most preexisting functions will be applied. "
+        echo "USER UNABLE TO SUDO. Setup script will not run."
+	echo "If rozfigure has already been installed, some of the pre-installed functionality will be applied to the session and function as usual. "
 	tput rmcup
 	return 
 fi

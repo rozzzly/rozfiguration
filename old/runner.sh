@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. ./setup.sh
+source ./setup.sh
 
 
 #n=5

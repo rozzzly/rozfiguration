@@ -1,0 +1,27 @@
+{
+  "name": "rozfiguration",
+  "version": "0.0.1",
+  "description": "Just a collection of some of the custom configurations, macros, useful tools, utilities, and random shit I've amassed over the years. All in one place. Also setup to allow multiple linux (I'm using CentOS 7) users to inherit the the same configs, but not globally, just for a small subset of users--in the developers (unix)group.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rozzzly/rozfiguration.git"
+  },
+  "keywords": [
+    "configuration",
+    "config",
+    "roz",
+    "rozzzly",
+    "macro",
+    "utilities"
+  ],
+  "author": "rozzzly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rozzzly/rozfiguration/issues"
+  },
+  "homepage": "https://github.com/rozzzly/rozfiguration"
+}
