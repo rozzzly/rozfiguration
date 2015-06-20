@@ -23,6 +23,8 @@ if ! id -nG ${whoami} | grep -qE "\bdevelopers\b"; then
 fi
 #==================================================================================================
 
+echo "ohai der"
+
 #-
 
 #==================================================================================================
@@ -33,20 +35,21 @@ fi
 #
 # ALSO colored error a la @see http://wiki.bash-hackers.org/scripting/terminalcodes
 #
+# TODO unbreak this shit
 #..................................................................................................
-CAN_SUDO=$(sudo -n uptime 2>&1|grep "load"|wc -l)
-if [ ${CAN_SUDO} -ge 0 ]; then
-	#save default so it can be restored
-	tput smcup
-	#white text
-	tput sietaf 7
-	#red background
-	tput settab 1
-        echo "USER UNABLE TO SUDO. Setup script will not run."
-	echo "If rozfigure has already been installed, some of the pre-installed functionality will be applied to the session and function as usual. "
-	tput rmcup
-	return 
-fi
+# $CAN_SUDO=$(sudo -n uptime 2>&1|grep "load"|wc -l)
+# if [ ${CAN_SUDO} -ge 0 ]; then
+# 	save default so it can be restored
+#	tput smcup
+#	#white text
+#	tput sietaf 7
+#	#red background
+#	tput settab 1
+#       echo "USER UNABLE TO SUDO. Setup script will not run."
+# 	echo "If rozfigure has already been installed, some of the pre-installed functionality will be applied to the session and function as usual. "
+# 	tput rmcup
+#	return 
+# fi
 #==================================================================================================
 
 #-
@@ -66,7 +69,9 @@ fi
 # 	@see http://unix.stackexchange.com/questions/38634/is-there-any-way-to-exit-less-without-clearing-the-screen
 #
 #..................................................................................................
-alias lsd='ls -alhHp --color=always --classify |& less -XFR'
+function lsd() { 
+ 	ls -alhHp --color=always --classify "$@" |& less -FXR	
+}
 #..................................................................................................
 #
 # override bash's default `ls` command
@@ -171,7 +176,7 @@ shopt -s cdspell
 #==================================================================================================
 # make top prettty by default
 #--------------------------------------------------------------------------------------------------
-alias top='atop'
+alias top='htop'
 #==================================================================================================
 
 #-
@@ -221,4 +226,31 @@ export HISTFILE=~/.bash_eternal_history
 #
 #..................................................................................................
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+#==================================================================================================
+
+#-
+
+#==================================================================================================
+# `source` in custom scripts
+#--------------------------------------------------------------------------------------------------
+#
+# TODO make this automatic with `./manifest.json` or by copying/synlinking `./configs/scripts/` to `/usr/local/bin/ or ~/bin/
+#
+# find full directory of this script
+#	@see http://stackoverflow.com/questions/59895/can-a-bash-script-tell-what-directory-its-stored-in
+#..................................................................................................
+#
+# the code below doesnt work for sourced, TODO get abetter solution supporting sysmlinks and sourced scripts
+#	DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd ) 
+#
+# hard code the path for now
+#
+#..................................................................................................
+DIR="/home/_developers/configs/scripts"
+#..................................................................................................
+#
+# load 'em
+#
+#..................................................................................................
+source "$DIR/quash.sh"
 #==================================================================================================

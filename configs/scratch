@@ -59,3 +59,15 @@ actuallly,
 set default editor for mc
 http://askubuntu.com/questions/16776/how-to-switch-the-editor-in-mc-midnight-commander-from-nano-to-mcedit
 
+cache ssh password with ssh-agent/ssh-add
+http://unix.stackexchange.com/questions/90853/how-can-i-run-ssh-add-automatically-without-password-prompt
+
+	and for timeout 
+	http://unix.stackexchange.com/questions/122511/configuring-the-default-timeout-for-the-ssh-agent
+	
+	@see user-load, or maybe scripts for more infooo
+
+
+bash function default argument value
+http://unix.stackexchange.com/questions/122845/using-a-b-for-variable-assignment-in-scripts
+
