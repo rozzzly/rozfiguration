@@ -1,0 +1,19 @@
+{
+	"install": {
+		// scripts ( and macros!! ) to inject via ~/.bashrc'
+		"scripts": {
+
+		},
+		"themes": {
+			// Midnight Commander
+			"mc": {
+
+			},
+			"vim": {
+			}
+		},
+		"misc": {
+
+		}
+	}
+}
