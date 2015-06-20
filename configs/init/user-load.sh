@@ -1,19 +1,19 @@
 #!/bin/bash
 
 ###################################################################################################
-# developers.sh											
+# user-load.sh											
 #--------------------------------------------------------------------------------------------------
 # basically a global .bashrc that's only for users in the `developers` group
 #
 # @author: rozzzly
 # @created: 6/7/15 1:04am
-# @updated: 6/7/15 1:05am
+# @updated: 6/19/15 9:43pm
 #
 ###################################################################################################
 
 
 #==================================================================================================
-# demand that user is a member of the `developers` group, exit if not
+# demand that user is a member of the `developers` group, "exit" if not
 #--------------------------------------------------------------------------------------------------
 if ! id -nG ${whoami} | grep -qE "\bdevelopers\b"; then
 #	echo "user "
@@ -21,17 +21,19 @@ if ! id -nG ${whoami} | grep -qE "\bdevelopers\b"; then
 #else 
 #	echo "dev"
 fi
+#==================================================================================================
 
-
+#-
 
 #==================================================================================================
 # demand that user can sudo into root, otherwise exit 
-#	@see http://goo.gl/qfMfwM
-#
-# ALSO
-#..................................................................................................
-# colored error a la @see http://wiki.bash-hackers.org/scripting/terminalcodes
 #--------------------------------------------------------------------------------------------------
+#
+# @see http://goo.gl/qfMfwM
+#
+# ALSO colored error a la @see http://wiki.bash-hackers.org/scripting/terminalcodes
+#
+#..................................................................................................
 CAN_SUDO=$(sudo -n uptime 2>&1|grep "load"|wc -l)
 if [ ${CAN_SUDO} -ge 0 ]; then
 	#save default so it can be restored
@@ -45,17 +47,41 @@ if [ ${CAN_SUDO} -ge 0 ]; then
 	tput rmcup
 	return 
 fi
+#==================================================================================================
 
+#-
  
 #==================================================================================================
 # make ls alot better 
-#-------------------------------------------------------------------------------------------------
-alias lsd='ls -alhHp --color=always --classify | less -R'
+#--------------------------------------------------------------------------------------------------
+#
+# keep in same buffer if output fits
+# 	@see http://superuser.com/questions/775941/bash-commands-that-dont-fit-on-one-page-make-output-scrollable
+#
+# keep colors in outputi
+#	@see http://www.commandlinefu.com/commands/view/5361/preserve-colors-when-piping-tree-to-less
+#	@see http://superuser.com/questions/36022/less-and-grep-getting-colored-results-when-using-a-pipe-from-grep-to-less 
+#
+# keep output in scroll back
+# 	@see http://unix.stackexchange.com/questions/38634/is-there-any-way-to-exit-less-without-clearing-the-screen
+#
+#..................................................................................................
+alias lsd='ls -alhHp --color=always --classify |& less -XFR'
+#..................................................................................................
+#
+# override bash's default `ls` command
+#
+#..................................................................................................
+alias ls='lsd'
+#==================================================================================================
 
+#-
 
 #==================================================================================================
 #  
-#-------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------
+
+#-
 
 #==================================================================================================
 # setup up fasd and assign alias
@@ -71,6 +97,7 @@ alias lsd='ls -alhHp --color=always --classify | less -R'
 #..................................................................................................
 #
 # include plug-in
+#
 #..................................................................................................
 eval "$(fasd --init bash-hook bash-ccomp)"
 # function to execute built-in cd
@@ -85,53 +112,69 @@ function fasd_cd ()
 		[ -d "$_fasd_ret" ] && cd "$_fasd_ret" || printf %s\\n "$_fasd_ret"
   	fi
 }
-#
-#
+#==================================================================================================
+
+#- 
+
+#==================================================================================================
 # setup aliases
+#--------------------------------------------------------------------------------------------------
+alias z_rawdawg='fasd_cd -d'     # cd, same functionality as j in autojump + directory listing
+alias zi='fasd_cd -d -i' 	 # cd with interactive selection
+alias zadd='fasd -A'		 # add path(s)
+alias zrem='fasd -D'		 # delete (paths)s
+alias zdel=`zrem`      		 # alias to the zrem alias
+
+alias za='fasd -a'       	 # any
+alias zs='fasd -s'       	 # show / search / select
+alias zis='zs -i'     		 # zs, but interactive
+
+alias zv='za -e vim'     	 # za to vim
+alias zsv='zs -e vim'	 	 # zs to vim
+alias ziv='zs -e vim'		 # zv, but interactive
+alias zisv='zis -e vim' 	 # zs, but interactive
+
+alias zd='fasd -d'       	 # directory
+alias zf='fasd -f'      	 # file
+alias zids='zs -d'       	 # interactive directory selection
+alias zifs='fasd -sif'   	 # interactive file selection
 #..................................................................................................
-alias z_rawdawg='fasd_cd -d'      # cd, same functionality as j in autojump + directory listing
-alias zi='fasd_cd -d -i'  # cd with interactive selection
-alias zadd='fasd -A'	  # add path(s)
-alias zrem='fasd -D'	  # delete (paths)s
-alias zdel=zrem           # alias to the zrem alias
-
-alias za='fasd -a'        # any
-alias zs='fasd -s'        # show / search / select
-alias zis='zs -i'     	  # zs, but interactive
-
-alias zv='za -e vim'      # za to vim
-alias zsv='zs -e vim'	  # zs to vim
-alias ziv='zs -e vim'	  # zv, but interactive
-alias zisv='zis -e vim'   # zs, but interactive
-
-alias zd='fasd -d'        # directory
-alias zf='fasd -f'        # file
-alias zids='zs -d'        # interactive directory selection
-alias zifs='fasd -sif'    # interactive file selection
 #
 # create alias to internal function in a way such that `z` will run `fasd_cd -d -i` and then `lsd`
-#-------------------------------------------------------------------------------------------------- 
+#
+#.................................................................................................. 
 function lcd () 
 {
 	eval "fasd_cd -d $0";
 	lsd;
 }
-#
-# enable autocomplete on aliases
-#..................................................................................................
-_fasd_bash_hook_cmd_complete z zi zadd zrem za zs zis zv zsv ziv zisv zd zf zids zifs
+#==================================================================================================
 
+#-
+
+#==================================================================================================
+# enable autocomplete on aliases
+#--------------------------------------------------------------------------------------------------
+_fasd_bash_hook_cmd_complete z zi zadd zrem za zs zis zv zsv ziv zisv zd zf zids zifs
+#==================================================================================================
+
+#-
 
 #==================================================================================================
 # enable `cd` auto-correct
 #--------------------------------------------------------------------------------------------------
 shopt -s cdspell
+#==================================================================================================
+
+#-
 
 #==================================================================================================
 # make top prettty by default
 #--------------------------------------------------------------------------------------------------
-#alias top='htop'
 alias top='atop'
+#==================================================================================================
+
+#-
 
 #==================================================================================================
 # create alias for vim's NERDtree 
@@ -142,7 +185,9 @@ alias top='atop'
 #
 #..................................................................................................
 alias vimt='vim -c "NERDTree" $1'
+#==================================================================================================
 
+#-
 
 #==================================================================================================
 # psudeo-unlimited (disk space) ./bash_history
@@ -157,14 +202,23 @@ alias vimt='vim -c "NERDTree" $1'
 # $HISTSIZE/$HISTFILESIZE undefined 
 # 
 #..................................................................................................
+#
 # Undocumented feature which sets the size to "unlimited".
-# http://stackoverflow.com/questions/9457233/unlimited-bash-history
+# 	@see http://stackoverflow.com/questions/9457233/unlimited-bash-history
+#
+#..................................................................................................
 export HISTFILESIZE=
 export HISTSIZE=
 export HISTTIMEFORMAT="[%F %T] "
 # Change the file location because certain bash sessions truncate .bash_history file upon close.
 # http://superuser.com/questions/575479/bash-history-truncated-to-500-lines-on-each-login
 export HISTFILE=~/.bash_eternal_history
+#
+#..................................................................................................
+#
 # Force prompt to write history after every command.
-# http://superuser.com/questions/20900/bash-history-loss
+# 	@see http://superuser.com/questions/20900/bash-history-loss
+#
+#..................................................................................................
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+#==================================================================================================

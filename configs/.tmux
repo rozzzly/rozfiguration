@@ -2,7 +2,7 @@
 set -g utf8
 set-window-option -g utf8 on
 
-# ^A as magic key binding
+# set ^A (or CTRL) as magic key binding
 set-option -g prefix C-a
 unbind-key C-b
 bind-key a send-prefix
@@ -22,6 +22,7 @@ set-window-option -g xterm-keys
 
 # set some pretty colors
 # ----------------------
+# 
 # set pane colors - hilight the active pane
 #set-option -g pane-border-fg colour235 #blue
 #set-option -g pane-active-border-fg colour240 #red
