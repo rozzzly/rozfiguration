@@ -60,4 +60,17 @@ set default editor for mc
 http://askubuntu.com/questions/16776/how-to-switch-the-editor-in-mc-midnight-commander-from-nano-to-mcedit
 
 could be useful, nodejs console.log write (not writeline) plus overwriting the previous line
-http://stackoverflow.com/questions/6157497/node-js-printing-to-console-without-a-trailing-newline
+http://stackoverflow.com/questions/6157497/node-js-printing-to-console-without-a-trailing-newlinecache ssh password with ssh-agent/ssh-add
+
+cache ssh password with ssh-agent/ssh-add
+http://unix.stackexchange.com/questions/90853/how-can-i-run-ssh-add-automatically-without-password-prompt
+
+	and for timeout 
+	http://unix.stackexchange.com/questions/122511/configuring-the-default-timeout-for-the-ssh-agent
+	
+	@see user-load, or maybe scripts for more infooo
+
+
+bash function default argument value
+http://unix.stackexchange.com/questions/122845/using-a-b-for-variable-assignment-in-scripts
+
