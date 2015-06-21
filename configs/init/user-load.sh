@@ -260,4 +260,4 @@ source "$DIR/configs/scripts/quash.sh"
 #==================================================================================================
 # run linking scripts
 #--------------------------------------------------------------------------------------------------
-source "$DIR/configs/misc/git-mergetool-quickie.sh"
+. "$DIR/configs/misc/git-mergetool-quickie.sh"
