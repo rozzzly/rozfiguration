@@ -241,16 +241,23 @@ PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 #..................................................................................................
 #
 # the code below doesnt work for sourced, TODO get abetter solution supporting sysmlinks and sourced scripts
-#	DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd ) 
+#	`DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )`
 #
 # hard code the path for now
 #
 #..................................................................................................
-DIR="/home/_developers/configs/scripts"
+DIR="/home/_developers" # TODO move to top of file, refactor name too
 #..................................................................................................
 #
 # load 'em
 #
 #..................................................................................................
-source "$DIR/quash.sh"
+source "$DIR/configs/scripts/quash.sh"
 #==================================================================================================
+
+#-
+
+#==================================================================================================
+# run linking scripts
+#--------------------------------------------------------------------------------------------------
+source "$DIR/configs/misc/git-mergetool-quickie.sh"
