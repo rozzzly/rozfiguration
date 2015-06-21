@@ -70,8 +70,7 @@ http://unix.stackexchange.com/questions/90853/how-can-i-run-ssh-add-automaticall
 	
 	@see user-load, or maybe scripts for more infooo
 
-
 bash function default argument value
 http://unix.stackexchange.com/questions/122845/using-a-b-for-variable-assignment-in-scripts
 
-merging git with `git mergetool` (with vimdiff diff3)
+merging git with `git mergetool` (with vimdiff & diff3)
