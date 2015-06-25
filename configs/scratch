@@ -1,7 +1,3 @@
-L list from Monday, Jun. 8 2015 3:05 AM
-
-To copy this list, type [Ctrl] A, then type [Ctrl] C. 
-
 Facebook
 https://www.facebook.com/
 
@@ -74,3 +70,10 @@ bash function default argument value
 http://unix.stackexchange.com/questions/122845/using-a-b-for-variable-assignment-in-scripts
 
 merging git with `git mergetool` (with vimdiff & diff3)
+
+bash scrict mode :: errors are fatal ---> forces you to write better code
+http://redsymbol.net/articles/unofficial-bash-strict-mode/
+
+lots of usefull reference for bash/terminal
+https://github.com/jlevy/the-art-of-command-line
+
