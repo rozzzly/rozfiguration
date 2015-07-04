@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+    <short>mosh</short>
+    <description>mosh-server firewalld exception -- @author rozzzly https://www.github.com/rozzzly</description>
+    <port protocol="udp" port="60000-61000"/>
+</service>

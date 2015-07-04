@@ -128,7 +128,7 @@ alias z_rawdawg='fasd_cd -d'     # cd, same functionality as j in autojump + dir
 alias zi='fasd_cd -d -i' 	 # cd with interactive selection
 alias zadd='fasd -A'		 # add path(s)
 alias zrem='fasd -D'		 # delete (paths)s
-alias zdel=`zrem`      		 # alias to the zrem alias
+alias zdel='zrem'      		 # alias to the zrem alias
 
 alias za='fasd -a'       	 # any
 alias zs='fasd -s'       	 # show / search / select
@@ -253,6 +253,8 @@ DIR="/home/_developers" # TODO move to top of file, refactor name too
 #
 #..................................................................................................
 source "$DIR/configs/scripts/quash.sh"
+#..................................................................................................
+source ~/.nvm/nvm.sh
 #==================================================================================================
 
 #-
