@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/rozzzly/rozfiguration/issues"
   },
-  "homepage": "https://github.com/rozzzly/rozfiguration"
+  "homepage": "https://github.com/rozzzly/rozfiguration",
+  "dependencies": {
+    "nvm": "0.0.3"
+  }
 }
