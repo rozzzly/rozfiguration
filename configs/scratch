@@ -77,3 +77,5 @@ http://redsymbol.net/articles/unofficial-bash-strict-mode/
 lots of usefull reference for bash/terminal
 https://github.com/jlevy/the-art-of-command-line
 
+
+fork npm packege --> depend on that local fork (not registered with npm)

@@ -18,6 +18,8 @@
 function quash ()
 {
 
+unset SSH_AUTH_SOCK
+
 IN=$1
 TTYL="${IN:=$(echo '30m')}"
 
