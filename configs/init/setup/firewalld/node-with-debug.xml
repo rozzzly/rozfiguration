@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+    	<short>node-with-debug</short>
+    	<description>node (with debug) exception -- @author rozzzly https://www.github.com/rozzzly</description>
+
+	<port protocol="udp" port="3000" />
+    	<port protocol="tcp" port="3000" /> 
+    
+	<port protocol="udp" port="5858" />
+	<port protocol="tcp" port="5858" />
+
+	<port protocol="udp" port="8080" />
+	<port protocol="tcp" port="8080" />
+
+</service>

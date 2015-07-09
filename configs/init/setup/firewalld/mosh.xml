@@ -3,4 +3,5 @@
     <short>mosh</short>
     <description>mosh-server firewalld exception -- @author rozzzly https://www.github.com/rozzzly</description>
     <port protocol="udp" port="60000-61000"/>
+    <port protocol="tcp" port="60000-61000"/>
 </service>

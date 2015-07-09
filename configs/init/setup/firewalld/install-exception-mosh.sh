@@ -16,6 +16,8 @@ CFGSPATH="$BASEPATH/configs"
 
 
 cp "$CFGSPATH/init/setup/firewalld/mosh.xml" /etc/firewalld/services
+cp "$CFGSPATH/init/setup/firewalld/node-with-debug" /etc/firewalld/services
 
 firewall-cmd --permanent --zone=public --add-service=mosh
+firewall-cmd --permanent --zone=public --add-service=node-with-debug
 firewall-cmd --reload
