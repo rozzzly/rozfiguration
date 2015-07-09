@@ -79,3 +79,22 @@ https://github.com/jlevy/the-art-of-command-line
 
 
 fork npm packege --> depend on that local fork (not registered with npm)
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+testing if a port open
+	listing on port 60500, use http://www.yougetsignal.com/tools/open-ports/ to check et
+
+nc -l 60500
+
+
+
+
+
+
+
+
+
+
+
