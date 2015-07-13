@@ -113,7 +113,9 @@ meteor debug (in `gh-demo`)
 	meteor debug --debug-port 600011 --port=60010 
 
 	node-inspector --web-port 60110 --debug-port 60111    	               
+		open in browser http://digitalsea.io:60110/?ws=digitalsea.io:60110&port=60111
 	meteor run --port 60100 --verbose --debug-port 60111        
+		refresh http://digitalsea.io:60110/?ws=digitalsea.io:60110&port=60111
 
           ______           ______           ______           ______           ______           ______           ______ 
 --**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--
