@@ -6,10 +6,10 @@
 	<port protocol="udp" port="3000" />
     	<port protocol="tcp" port="3000" /> 
     
+	<port protocol="udp" port="3001" />
+	<port protocol="tcp" port="3001" />
+
 	<port protocol="udp" port="5858" />
 	<port protocol="tcp" port="5858" />
-
-	<port protocol="udp" port="8080" />
-	<port protocol="tcp" port="8080" />
 
 </service>
