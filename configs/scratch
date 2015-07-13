@@ -122,10 +122,12 @@ meteor debug (in `gh-demo`)
 make less behave like `tail -f` AND shortcut to from vim (at current line)
 
 	  less -R +F
-	  	ESC   =--->   v 				(open buffer in vim, cursors will be matched up)
-			ESC   =--->   :   =--->	  q 		(quit vim, back to less)
+	  	ESC   =--->   v 	(open buffer in vim, cursors will be matched up)
+			CTRL ^ c	(quit vim, back to less)
 		
-		ESC   =--->   f					(start `tail -f` mode with keybinding in less)
+		ESC   =--->   f		(start `tail -f` mode with keybinding in less)
+
+http://superuser.com/questions/343572/how-do-i-reorder-tmux-windows
 
           ______           ______           ______           ______           ______           ______           ______ 
 --**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--
