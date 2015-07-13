@@ -114,7 +114,7 @@ meteor debug (in `gh-demo`)
 
 	node-inspector --web-port 60110 --debug-port 60111    	               
 		open in browser http://digitalsea.io:60110/?ws=digitalsea.io:60110&port=60111
-	meteor run --port 60100 --verbose --debug-port 60111        
+	meteor --port 60100 --verbose --debug-port 60111        
 		refresh http://digitalsea.io:60110/?ws=digitalsea.io:60110&port=60111
 
           ______           ______           ______           ______           ______           ______           ______ 
@@ -127,7 +127,7 @@ make less behave like `tail -f` AND shortcut to from vim (at current line)
 	  	ESC   =--->   v 	(open buffer in vim, cursors will be matched up)
 			CTRL ^ c	(quit vim, back to less)
 		
-		ESC   =--->   f		(start `tail -f` mode with keybinding in less)
+		ESC   =--->   F		(start `tail -f` mode with keybinding in less)
 
 http://superuser.com/questions/343572/how-do-i-reorder-tmux-windows
 
