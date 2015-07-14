@@ -134,6 +134,10 @@ http://superuser.com/questions/343572/how-do-i-reorder-tmux-windows
           ______           ______           ______           ______           ______           ______           ______ 
 --**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--
 
+copy dot-files from here and put 'em in ~/ 
+	if destination file exists =---> back it up before moving file over (and versioning those with `cp --backup [...]` 
+
+cp one.txt three.txt --b -d --preserve=all -u --suffix=bak --target-directory .backups
 
           ______           ______           ______           ______           ______           ______           ______ 
 --**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--
@@ -145,5 +149,4 @@ http://superuser.com/questions/343572/how-do-i-reorder-tmux-windows
 
           ______           ______           ______           ______           ______           ______           ______ 
 --**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--|_$==$_|--**-**--
-
 
