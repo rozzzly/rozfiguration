@@ -1,0 +1,170 @@
+
+zzzly@digitalsea gh-release-watch]$ vim ./dbg.qik.sh
+[rozzzly@digitalsea gh-release-watch]$ rm -fr local
+[rozzzly@digitalsea gh-release-watch]$ ./dbg.qik.sh
+rozzzly, this is your first time using Meteor!
+Installing a Meteor distribution in your home directory.
+######################################################################## 100.0%
+% Parsing the --port option
+[[[[[ /var/www/html/tom/OnlineServices/gh-release-watch ]]]]]
+
+=> Started proxy.
+In remote catalog refresh
+Returning sync token:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1428085268567,"versions":1428087773519,"builds":1428088145686,"releaseTracks":1427810597163,"releaseVersions":1428087773870}
+Adding syncToken:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1430235234793,"versions":1428681430718,"builds":1428672635180,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Returning sync token:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1430235234793,"versions":1428681430718,"builds":1428672635180,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+=> Started MongoDB.
+Adding syncToken:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1432562880927,"versions":1429171805247,"builds":1429150579015,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Returning sync token:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1432562880927,"versions":1429171805247,"builds":1429150579015,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Adding syncToken:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1434529016910,"versions":1429640249758,"builds":1429627918971,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Returning sync token:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1434529016910,"versions":1429640249758,"builds":1429627918971,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Adding syncToken:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437043685041,"versions":1430076887878,"builds":1430077357228,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Returning sync token:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437043685041,"versions":1430076887878,"builds":1430077357228,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Adding syncToken:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1430168059845,"builds":1430168467350,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Returning sync token:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1430168059845,"builds":1430168467350,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Adding syncToken:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1430500209019,"builds":1430531716655,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Returning sync token:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1430500209019,"builds":1430531716655,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Adding syncToken:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1431003575199,"builds":1431048082651,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Returning sync token:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1431003575199,"builds":1431048082651,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Adding syncToken:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1431590003556,"builds":1431624855415,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Returning sync token:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1431590003556,"builds":1431624855415,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Adding syncToken:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1432071095337,"builds":1432082455815,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Returning sync token:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1432071095337,"builds":1432082455815,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Adding syncToken:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1432537731218,"builds":1432589486182,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Returning sync token:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1432537731218,"builds":1432589486182,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Adding syncToken:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1433021607928,"builds":1433074238001,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Returning sync token:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1433021607928,"builds":1433074238001,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Adding syncToken:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1433430257949,"builds":1433495299708,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Returning sync token:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1433430257949,"builds":1433495299708,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Adding syncToken:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1433958543365,"builds":1434018405633,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Returning sync token:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1433958543365,"builds":1434018405633,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Adding syncToken:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1434447309868,"builds":1434486696968,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Returning sync token:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1434447309868,"builds":1434486696968,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Adding syncToken:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1434990675949,"builds":1435077872119,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Returning sync token:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1434990675949,"builds":1435077872119,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Adding syncToken:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1435542411640,"builds":1435686408781,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Returning sync token:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1435542411640,"builds":1435686408781,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Adding syncToken:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1435932714448,"builds":1436200567665,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Returning sync token:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1435932714448,"builds":1436200567665,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Adding syncToken:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1436431534729,"builds":1436686659287,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Returning sync token:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1436431534729,"builds":1436686659287,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Adding syncToken:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1436967103202,"builds":1437160803265,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Returning sync token:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1436967103202,"builds":1437160803265,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Adding syncToken:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1437275308521,"versions":1437282898417,"builds":1437282899227,"releaseTracks":1437114633220,"releaseVersions":1437161253117}
+Local package version is up-to-date: accounts-base@1.2.0
+Local package version is up-to-date: accounts-github@1.0.4
+Local package version is up-to-date: accounts-oauth@1.1.5
+Local package version is up-to-date: autoupdate@1.2.1
+Local package version is up-to-date: base64@1.0.3
+Local package version is up-to-date: binary-heap@1.0.3
+Local package version is up-to-date: blaze@2.1.2
+Local package version is up-to-date: blaze-tools@1.0.3
+Local package version is up-to-date: boilerplate-generator@1.0.3
+Local package version is up-to-date: callback-hook@1.0.3
+Local package version is up-to-date: check@1.0.5
+Local package version is up-to-date: ddp@1.1.0
+Local package version is up-to-date: deps@1.0.7
+Local package version is up-to-date: ejson@1.0.6
+Local package version is up-to-date: email@1.0.6
+Local package version is up-to-date: geojson-utils@1.0.3
+Local package version is up-to-date: github@1.1.3
+Local package version is up-to-date: html-tools@1.0.4
+Local package version is up-to-date: htmljs@1.0.4
+Local package version is up-to-date: http@1.1.0
+Local package version is up-to-date: id-map@1.0.3
+Local package version is up-to-date: jquery@1.11.3_2
+Local package version is up-to-date: json@1.0.3
+Local package version is up-to-date: less@1.0.14
+Local package version is up-to-date: livedata@1.0.13
+Local package version is up-to-date: localstorage@1.0.3
+Local package version is up-to-date: logging@1.0.7
+Local package version is up-to-date: meteor@1.1.6
+Local package version is up-to-date: minifiers@1.1.5
+Local package version is up-to-date: minimongo@1.0.8
+Local package version is up-to-date: mongo@1.1.0
+Local package version is up-to-date: mongo-livedata@1.0.8
+Local package version is up-to-date: oauth@1.1.4
+Local package version is up-to-date: oauth2@1.1.3
+Local package version is up-to-date: observe-sequence@1.0.6
+Local package version is up-to-date: ordered-dict@1.0.3
+Local package version is up-to-date: random@1.0.3
+Local package version is up-to-date: reactive-dict@1.1.0
+Local package version is up-to-date: reactive-var@1.0.5
+Local package version is up-to-date: reload@1.1.3
+Local package version is up-to-date: retry@1.0.3
+Local package version is up-to-date: routepolicy@1.0.5
+Local package version is up-to-date: service-configuration@1.0.4
+Local package version is up-to-date: session@1.1.0
+Local package version is up-to-date: spacebars@1.0.6
+Local package version is up-to-date: spacebars-compiler@1.0.6
+Local package version is up-to-date: templating@1.1.1
+Local package version is up-to-date: tracker@1.0.7
+Local package version is up-to-date: ui@1.0.6
+Local package version is up-to-date: underscore@1.0.3
+Local package version is up-to-date: url@1.0.4
+Local package version is up-to-date: webapp@1.2.0
+Local package version is up-to-date: webapp-hashing@1.0.3
+Downloading missing local versions of package iron:core@0.3.4 : [ 'os.linux.x86_64' ]
+Downloading missing local versions of package iron:dynamic-template@0.4.1 : [ 'os.linux.x86_64' ]
+Downloading missing local versions of package meteorhacks:fast-render@1.0.1 : [ 'os.linux.x86_64' ]
+Downloading missing local versions of package mizzao:bootstrap-3@3.3.1_1 : [ 'os.linux.x86_64' ]
+Downloading missing local versions of package mystor:routecore@0.2.0 : [ 'os.linux.x86_64' ]
+Downloading missing local versions of package tmeasday:page-js-ie-support@1.3.5 : [ 'os.linux.x86_64' ]
+Doing HTTP request:  GET https://warehouse.meteor.com/builds/TiZfdBidWubjkR43P/1409876119098/RSYZbyuHPe/iron:core-0.3.4-os+web.browser+web.cordova.tgz
+Doing HTTP request:  GET
+https://warehouse.meteor.com/builds/TiZfdBidWubjkR43P/1409876174830/ixpfoGpN7A/iron:dynamic-template-0.4.1-os+web.browser+web.cordova.tgz
+Doing HTTP request:  GET
+https://warehouse.meteor.com/builds/QkQ3HSXS64n3G7tRn/1409572935846/98G9ibJv8G/meteorhacks:fast-render-1.0.1-os+web.browser+web.cordova.tgz
+Doing HTTP request:  GET
+https://warehouse.meteor.com/builds/AdXwwBeg7R5832GYd/1417816503775/JzTxWKFg8m/mizzao:bootstrap-3-3.3.1_1-os+web.browser+web.cordova.tgz
+Doing HTTP request:  GET
+https://warehouse.meteor.com/builds/yrrxe47LkfurSwQh8/1429284276423/eeg7FZf7WA/mystor:routecore-0.2.0-os+web.browser+web.cordova.tgz
+Doing HTTP request:  GET
+https://warehouse.meteor.com/builds/DfAS4PyxrxyrEoRE2/1407099572330/4EB6HBXfdk/tmeasday:page-js-ie-support-1.3.5-os+web.browser+web.cordova.tgz
+W20150719-02:15:16.157(-4)? (STDERR) debugger listening on port 60111
+I20150719-02:15:17.922(-4)? hello, this is the server
+I20150719-02:15:17.937(-4)? this is the server, goodbye,
+=> Started your app.
+
+=> App running at: https://d3sqy0vbqsdhku.cloudfront.net/packages-bootstrap/1.1.0.2
+

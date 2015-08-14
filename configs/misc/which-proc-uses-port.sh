@@ -32,7 +32,7 @@ netstat -tulpn | grep :3306
 
 # ?? learn about process with /proc via pid
 
-#ls -l /proc/808/exe
+ls -l /proc/808/exe
 
 # lrwxrwxrwx 1 root root 0 Jun 22 20:05 /proc/808/exe -> /usr/sbin/mysqld
 
