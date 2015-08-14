@@ -70,8 +70,14 @@ echo "ohai der"
 #
 #..................................................................................................
 function lsd() { 
- 	ls -alhHp --color=always --classify "$@" |& less -FXR	
+ 	ls -alhHp --color=always --classify "$@" |& less -R
+	
+	# idk what the -F or -R is on less (well -F is follow im pretty sure)
+	# but anyways dont know how those got there. they make it freeze until it gets killed by sys.
+	#..........................................................................................
+	#ls -alhHp --color=always --classify "$@" |& less -FXR	
 }
+
 #..................................................................................................
 #
 # override bash's default `ls` command
