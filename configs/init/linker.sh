@@ -8,5 +8,6 @@ BASEPATH="/home/_developers"
 #link
 ln "$BASEPATH/configs/misc/git-mergetool-quicky" "~/bin/git-mergetool-quicky" -s
 
+ln "$BASEPATH/configs/dot-files.vimrc" "~/.vimrc" -s
 
 # TODO actually wtf, I want this to auto apply
